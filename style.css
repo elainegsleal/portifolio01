@@ -1,0 +1,433 @@
+*{ 
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: rgb(231, 231, 170);
+    height: 120vh;
+}
+
+.interface {    
+    max-width: 1280px; /* se eu tirar isso, a caixa verde fiva inteira */
+    margin: 0 auto; 
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+
+    padding: 10px 20px;
+    margin-right: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color:whitesmoke;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-social button{
+    width: 40px;
+    height:40px;
+    border-radius: 20px;
+    cursor: pointer;
+    border:none;
+    background-color:#98a007fd;
+    font-size:15px;
+    margin:0 4px;
+    transition: .2s;
+}
+ h2.titulo {
+    color:black;
+    font-size: 30px;
+    text-align: center;
+
+ }
+h2.titulo span {
+    color:#98a007fd;
+    
+ }
+
+button:hover, form .btn-enviar input:hover { /*somreamento e aumento do botao ao passar o mouse */
+    box-shadow: 0px 0px 8px rgb(226, 216, 207);
+    transform: scale(1.05);
+}
+
+/* Estilo do cabecalho */
+header > .interface2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color :#a8af24fd;
+    height:160px;
+    padding-top: 110px; 
+    padding-bottom: 110px;
+    
+}
+
+header a{
+    color:white;
+    text-decoration: none;
+    display:inline-block;
+    transition: .2s;
+    font-weight: 600;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding:0 40px;
+    font-size: 25px;
+}
+
+header .btn-contato button {
+
+    padding: 10px 30px;
+    margin-right: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color:whitesmoke;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header a:hover {
+    color:white;
+    transform: scale(1.05);
+}
+
+header .menu-desktop{
+
+}
+
+
+
+/* header .logo img{
+    margin-left: 25px;
+}*/
+
+/*ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+  padding: 40px 10%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap:120px
+}
+.topo-do-site .txt-topo-site h1{
+    color:black;
+    font-size: 34px;
+    line-height: 20px; /* distancia entre as linhas */
+}
+
+.topo-do-site .txt-topo-site p{
+    color: black;
+    margin:30px 0;
+    font-size: 18px;
+    align-items: flex-end;
+}
+
+.topo-do-site .img-topo-site img{
+   /* position: relative; /* precisa ser diferente da static*/
+   /* animation: mover 2s ease-in-out infinite alternate;*/
+    border-radius: 50px;
+}
+
+.topo-do-site .btn-contato button{
+    background-color: #a8af24fd;;
+}
+
+@keyframes mover {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+
+
+/* ESTILO ESPECIALIDADES ------------------------------------------------------------------------------------*/
+
+section.especialidades{
+       padding: 100px 4%; 
+       box-shadow: 0 0 30px 0px grey;
+}
+
+section.especialidades .flex{
+    gap: 40px;
+}
+
+.especialidades .especialidades-box{
+    color:rgb(201, 31, 31);
+    padding:40px;
+    border-radius: 20px;
+  /*  border: 2px solid rgb(199, 193, 193); */
+    margin-top: 25px;
+    transition:.2s;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 45px;
+    color: #98a007fd;
+    
+}
+
+.especialidades .especialidades-box h3{
+    margin: 20px 0;
+    font-size: 20px;
+}
+.especialidades .especialidades-box:hover{
+    transformer: scale (1.05);
+    box-shadow:0 0 8px grey;
+}
+/* ESTILO SOBRE --------------------------------------------------------------------------------------*/
+
+section.sobre{
+    padding: 100px 4%;
+    box-shadow: 0 0 30px 0px gray;
+    margin-top:100px;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap:60px;
+}
+
+.sobre .txt-sobre{
+    color:black;
+}
+
+.sobre .txt-sobre h2 {
+    font-color:black;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom:30px;
+   
+}
+
+.sobre .img-sobre img{
+    border-radius: 80px;
+
+}
+
+.sobre .txt-sobre h2 span{
+    color:#98a007fd;
+    display:block;
+}
+.sobre .txt-sobre p{
+    margin:20px 0;
+    text-align: justify;
+}
+
+
+/*ESTILO DO PORTIFOLIO ----------------------------------------------------------------------------------*/
+
+section#portifolio{
+    padding: 80px 4%;
+   /* box-shadow: 0 0 30px 10px gray;*/
+
+
+}
+
+section#portifolio .flex{
+   justify-content: space-around; /* dentro da flex, centraliza e distancia, com o mesmo tamanho as divs do contnainer */
+    margin-top:60px; /*distancia o titulo das imagens */
+}
+
+.img-port{
+    width: 250px;
+    height: 350px;
+    background-size:cover;
+    background-position: 0% 100%; /* posicao da inagem: 0% na horizontal(inicio horizontal e 100% vertical(nao precisa rolagem a imagem aparece toda);*/
+    transition: 5s;
+    cursor: pointer;
+    border-radius:40px ;
+    position: relative; /* necessario para funcionar o overlay */
+}
+
+.img-port:hover{
+    background-position: 100% 100%;  /* rola ate ao final horizontal da imagem qunado passa o mouse por cima*/
+}
+
+.overlay{
+    position:absolute; /* so vai trabalhar detnro o img-port por causa do position relative */
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius: 40px;
+    background-color: rgba(15, 14, 14, 0.548); /* está correto? nao esra daondo opcao do rgb. */
+    display:flex; /* usado para centralizad a palavra "projeto.." na imagem. */
+    align-items: center; 
+    justify-content:center;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0;
+    color: #fff; 
+    transition: .5s;
+
+}
+
+.overlay a{
+    color:white;
+}
+    
+.overlay:hover{
+    opacity:1;
+}
+
+/*ESTILO DO FORMULARIO -------------------------------------------------------------------------------------------*/
+section.formulario{
+    padding: 80px 4%;
+   box-shadow: 0 0 30px 0px gray; 
+ 
+}
+
+form{
+    max-width: 300px;
+    margin: 0 auto; /* centraliza o formulario na tela */
+    display:flex; /* caixa de teste uma embaixo da outra */
+    justify-content: center; /*centraliza*/
+    flex-direction:column; /*alinha em coluna */
+    gap:10px; /*estpaço entre os campos */
+    margin-top: 40px;
+} 
+
+form input, form textarea {
+    width: 100%; /*usa todo espaço do form */
+    background-color: rgba(21, 22, 22, 0.747);
+    border:0; /* tira borda */
+    outline:0; /* tira contorno da orda */
+    padding:15px 15px; /*aumenta o espaço interno */
+    border-radius: 15px; /*arredonda a borda */
+    color:#fff; /* muda cor do texto */
+    font-size:14px; /* aumenta afonte */
+
+}
+
+form textarea {
+    resize: none;
+    max-height: 300px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center /* centraliza borao enviar */
+}
+
+form .btn-enviar input{ 
+    width:100px;
+    background-color:#98a007fd;
+    color:black;
+    font-weight:700; /* negrita a fonte */
+    cursor:pointer;
+    transition:.2s;
+
+}
+
+/* estilo RODAPE */
+
+footer{
+   padding-top: 100px;
+   /* box-shadow: 0 0 20px 0px gray;*/
+
+}
+
+footer .flex {
+    justify-content: center;
+    gap:20px;
+}
+
+footer .line-footer {
+        padding: 20px 0;
+}
+
+footer .line-footer p{
+   display:flex;
+   justify-content: center;
+
+}
+
+footer .line-footer p i{
+    color:#1c1d1b;
+    font-size:20px;
+}
+
+footer .line-footer p a{
+     color:#4f5808fd;
+     font-size:14px;
+
+}
+
+ 
+
+.borda {
+    padding: 10px 0;
+    border-top: 2px solid #98a007fd;
+}
+
+
+/* ESTILO CARDAPIO */
+
+
+
+
+/* ESTILO CURRICULO */
+
+setion.inicio{
+    padding:80 4%;
+}
+
+img{
+    align-items: center;
+}
+}
+
+
+}
+img{
+    align-items: center;
+
+}
+}
+
+    
+
+
+   
+
+
+
+h1{ color:rgb(49, 49, 250);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:36px;
+    text-align: center;
+}
+
+h2{ font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(16, 16, 143);
+       
+}
+
+body { background-color: antiquewhite;
+
+ }
+
+
+/* ESTILO ODS */

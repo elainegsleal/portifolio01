@@ -1,0 +1,96 @@
+
+
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 56px;
+}
+
+h1 {
+    text-align: center;
+  }
+
+.btn-social p {
+    text-align: center;
+    font-size: 14px;
+    
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    text-align: justify;
+   
+}
+
+a{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+
+}
+
+i{
+  font-size: 20px;
+ 
+}
+
+h2{
+  
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 12;
+}
+
+ul{
+    padding-left: 0;
+}
+
+li{
+    list-style-position: inside;
+    text-align: left;
+    font-size: 16px;
+
+}
+
+.fone{
+    align-items:center
+}
+.email {
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    font-size:16px;
+    text-decoration: underline;
+} 
+
+
+.btn-social button{
+    width: 40px;
+    height:40px;
+    border-radius: 20px;
+    cursor: pointer;
+    border:none;
+    background-color:#babd07fd;
+    font-size:15px;
+    margin:0 4px;
+    
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+/*a:link, a:visited {
+    background-color: #f8ead8;
+    color: #070200ee;
+   /* padding: 3px 5px;**/
+    text-align: center;
+    text-decoration: none;
+   /* display: inline-block;
+    border-bottom: 2px solid #e29f7fde; */*/
+  
